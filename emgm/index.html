@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home | e.MGM Herbal Coffee</title>
+    <meta name="description" content="Herbal coffee sachets from e.MGM Food Supplement Trading.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito+Sans:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrap bar">
+            <a class="logo" href="index.html">e.<span>MGM</span> Coffee</a>
+            <nav id="nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="tools"><button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">◐</button>
+                <button class="icon-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="l">
+                <h1>Herbal coffee, made for everyday cups.</h1>
+                <p>e.MGM Food Supplement Trading brings you ready-to-mix coffee sachets blended with herbs and
+                    superfoods.</p>
+                <p><a class="btn" href="products.html">Shop our coffee</a><a class="btn alt" href="contact.html">Order
+                        now</a></p>
+            </div>
+            <div class="r"><img src="images/both-products.png"
+                    alt="Seth Herbal Coffee with Barley and Horny Goat Coffee Mix pouches"></div>
+        </section>
+        <section>
+            <div class="wrap">
+                <h2>Featured coffee</h2>
+                <p class="muted" style="margin-bottom:1.5rem">Two blends, one easy sachet. Tap a product to see its
+                    ingredients.</p>
+                <div class="grid">
+                    <article class="card seth"><img src="images/seth-barley.png"
+                            alt="Seth Herbal Coffee with Barley pouch" style="object-position:center 55%">
+                        <div class="body">
+                            <h3>Seth Herbal Coffee with Barley</h3>
+                            
+                            <span><span class="tag">10 sachets &times; 21 g</span><span class="tag">210 g</span></span>
+                            <p class="price">&#8369; 200</p>
+                            <button class="btn" data-product="Seth Herbal Coffee with Barley"
+                                data-img="images/seth-barley.png"
+                                data-info="10 sachets x 21 g. Net wt. 210 grams. Mix one sachet with hot water."
+                                data-ing="Barley, Wheatgrass, Mangosteen, Lemon Grass, Moringa, Spirulina, Grapeseed, Premium Coffee, herbs, Banaba, Non-dairy Creamer and Stevia">View
+                                details</button>
+                        </div>
+                    </article>
+                    <article class="card goat"><img src="images/both-products.png" alt="Horny Goat Coffee Mix pouch"
+                            style="object-position:75% center">
+                        <div class="body">
+                            <h3>Horny Goat Coffee Mix</h3>
+                           
+                            <span><span class="tag">10 sachets &times; 21 g</span><span class="tag">210 g</span></span>
+                            <p class="price">&#8369; 200</p>
+                            <button class="btn" data-product="Horny Goat Coffee Mix" data-img="images/both-products.png"
+                                data-info="10 sachets x 12 g. Net wt. 120 grams. Mix one sachet with hot water."
+                                data-ing="Horny Goat Weed, Tongkat Ali, Maca Root, Korean Ginseng, Mangosteen, Grapeseed, Agaricus Mushroom, Arabica Coffee Bean, Non-dairy Creamer and Stevia">View
+                                details</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section style="background:var(--card)">
+            <div class="wrap split">
+                <div>
+                    <h2>Why people come back</h2>
+                    <ul class="info">
+                        <li>Single-serve sachets: just add hot water.</li>
+                        <li>Sweetened with stevia.</li>
+                        <li>Blends made with herbs, mangosteen and grapeseed.</li>
+                    </ul>
+                    <p style="margin-top:1rem"><a class="btn" href="about.html">About the business</a></p>
+                </div>
+                <img src="images/seth-barley.png" alt="Seth Herbal Coffee pouch"
+                    style="border-radius:var(--r);max-height:420px;margin-inline:auto">
+            </div>
+        </section>
+        <div id="modal" class="modal" role="dialog" aria-modal="true">
+            <div class="box"><button class="x" aria-label="Close">&times;</button>
+                <img id="mImg" alt=""
+                    style="border-radius:10px;max-height:240px;object-fit:cover;width:100%;margin-bottom:1rem">
+                <h3 id="mTitle"></h3>
+                <p id="mInfo" class="muted"></p>
+                <p><strong>Ingredients:</strong> <span id="mIng"></span></p>
+                <p class="note">Food supplement. No approved therapeutic claims.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrap">
+            <p><strong>e.MGM Food Supplement Trading</strong> &middot; SETH HERB'S coffee food supplements 
+Hully spirit Qc &middot; 09511451521</p>
+            <p class="muted" style="color:#9fc0cb;font-size:.9rem;margin-top:.5rem">Food supplement. No approved
+                therapeutic claims. &copy; 2026 </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
